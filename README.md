@@ -25,11 +25,11 @@ You could run `sls deploy` and simply deploy from here on out, but since Travis 
 
 * In the Shopify backend, click **Apps**
 * You will see a link that says **Manage private apps**, click that
-* On the top right corner, click button **Create a new pricate app**
+* On the top right corner, click button **Create a new private app**
 * Give this app Read and Write access to Orders, Inventory, and Products. If there's anything else that you may need, feel free to give yourself access to that too.
 
 #### Step 3 - Copy environment variables
 
-Rename the `.env.example` to `.env` and paste the API key, Password, and store name in the appropriate variable.
+Rename the `.env.example` to `.env` and paste the API key, Password, and store name next to the appropriate variable.
 
 **Important:** While setting up travis, add the environment variables in the settings.
