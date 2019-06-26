@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - node
+sudo: required
+cache:
+  directories:
+    - node_modules
+env:
+  global:
+    - AWS_REGION=us-east-1
+    - SLS_DEBUG=true
+before_install:
+    - npm install -g serverless
+before_script: chmod 0777 ./deploy.sh
+script: ./deploy.sh

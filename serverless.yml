@@ -1,0 +1,18 @@
+service: product_bundler_lite
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-1
+  environment:
+    SHOP_NAME: ${env:SHOP_NAME}
+    API_KEY: ${env:API_KEY}
+    PASSWORD: ${env:PASSWORD}
+functions:
+  app:
+    handler: app.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin

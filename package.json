@@ -1,0 +1,25 @@
+{
+  "name": "product-bundler-lite-sls",
+  "version": "0.0.1",
+  "description": "Lite version of product bundler with CI/CD serverless deployment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sls": "sls offline"
+  },
+  "author": "Parkfield Commerce",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "serverless": "^1.45.1",
+    "serverless-http": "^2.0.2",
+    "serverless-offline": "^5.3.3",
+    "shopify-node-api": "^1.11.0"
+  },
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^2.1.1"
+  }
+}
