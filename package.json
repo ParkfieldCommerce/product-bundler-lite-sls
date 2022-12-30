@@ -14,7 +14,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "serverless": "^1.45.1",
+    "serverless": "^1.83.3",
     "serverless-dotenv-plugin": "^2.1.1",
     "serverless-http": "^2.0.2",
     "serverless-offline": "^5.3.3",
